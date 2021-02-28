@@ -1,14 +1,11 @@
 # Code-Challenge-Senior-Backend
 
-The `defect.js` contains logic on how to report a defect of a machine, which is reported by a worker.
+### Solution
+The solution was thought as an RPC interface over a `Defect` service which would be responsable of some CRUD operations.
 
-This structure is based on a monolithic function. The task is to refactor that function: 
+- `src/defect.ts` is our `Defect` service
+- `src/repository` contains the functions which will interact with the database
+- `src/middlewares/rpc.js` would be responsible for calling the `Defect` service methods
 
-1. Refactor the code based on clean code standards
-2. Propose and implement a design pattern (e.g. controller, service etc.)
-3. Implement unit tests
 
-Note: The example-db.sql is just a snippet of the database and should support the understanding of the logic. The function does not need to be executed. The motivation of this challenge is to understand your approach. 
-
-Please send your result as a .zip folder to amine.uenal@zksystems.io 
-
+No tests were written because the challenge itself is quite contrived and a lot of assumptions were made already.
